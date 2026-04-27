@@ -1,5 +1,7 @@
 import express, { type NextFunction, type Request, type Response } from "express";
 
+import { validateRouter } from "./routes/validate";
+
 export const app = express();
 
 app.use(express.json());
@@ -7,6 +9,8 @@ app.use(express.json());
 app.get("/health", (_req, res) => {
   res.status(200).json({ ok: true });
 });
+
+app.use(validateRouter);
 
 app.use((_req, res) => {
   res.status(404).json({
