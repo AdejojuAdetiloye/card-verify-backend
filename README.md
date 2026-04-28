@@ -1,6 +1,6 @@
 # Card Verify Backend
 
-Backend intern assessment project: a **Node.js + TypeScript + Express** API with a single endpoint to validate a card number.
+Backend intern assessment project: a **Node.js + TypeScript + Express** API with a single endpoint to validate a card number - so that if wrong, reject and if correct, validate.
 
 ## Requirements
 
